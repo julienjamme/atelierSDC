@@ -7,7 +7,7 @@ description: |
 author: JJ
 slides:
   text: Doc
-  url: src/tableaux/index.html
+  url: src/donnees_tabulees/index.html
 order: 2
 lang: fr-FR
 ---
