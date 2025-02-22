@@ -1,5 +1,17 @@
 ---
-title: "Atelier SDC"
+listing:
+  id: presentations
+  contents: cards
+  sort: "order asc"
+  categories: false
+  template: style/listing-grid.ejs
+sidebar: false
+page-layout: full
+toc: false
 ---
 
-Ici un atelier d'introduction aux méthodes de gestion de la confidentialité.
+
+# Atelier introductif
+
+::: {#presentations}
+:::

@@ -1,0 +1,13 @@
+---
+title: Introduction 
+image: img/donnees_tabulees_sdc.jpeg
+date: last-modified
+description: |
+  <b>Description :</b> Introduction
+author: JJ
+slides:
+  text: Doc
+  url: src/introduction/index.html
+order: 1
+lang: fr-FR
+---

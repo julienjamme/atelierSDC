@@ -1,18 +1,51 @@
 project:
   type: website
+  render:
+    - /src/**/index.qmd
+    - index.qmd
+    - /cards/*.qmd
   output-dir: "_site"
 
 title: "Atelier SDC"
-format: 
-  html: 
+
+format:
+  html:
+    theme:
+      light: [cosmo, style/styles.scss]
+      dark: [cyborg, style/styles.scss]
+    reference-location: margin
     toc: true
-    toc-location: left
-    number-sections: true
-    theme: cosmo
+    code-copy: true
+    code-overflow: wrap
+    include-in-header: "style/fontawesome.html"
+    header-includes: |
+        <link rel="icon" type="image/png" sizes="32x32" href="src/_extensions/InseeFrLab/onyxia/favicon-32x32.png">
+
 website:
-  navbar:
+  page-navigation: true
+  title: "Atelier SDC"
+  site-url: "https://julienjamme.github.io/atelierSDC/"
+  repo-url: "https://github.com/julienjamme/atelierSDC.git"
+  open-graph: true
+  page-footer:
+    left: "This page is built with [Quarto](https://quarto.org/)."
     right:
-      - text: "Introduction"
-        href: "introduction.html"
-      - text: "Tableaux"
-        href: "tableaux.html"
+    - text: "License"
+      href: LICENSE
+  navbar:
+    logo: https://upload.wikimedia.org/wikipedia/fr/thumb/1/10/Logo_Insee.svg/1200px-Logo_Insee.svg.png
+    align: center
+    title: false
+    collapse-below: lg
+    right:
+      - icon: github
+        href: "https://github.com/julienjamme/atelierSDC.git"
+        aria-label: GitHub
+    left:
+      - href: index.qmd
+        text: Accueil
+  
+publish:
+  gh-pages:
+    branch: gh-pages
+    dist: _site

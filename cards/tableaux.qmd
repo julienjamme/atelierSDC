@@ -1,0 +1,13 @@
+---
+title: Tableaux 
+image: img/donnees_tabulees_sdc.jpeg
+date: last-modified
+description: |
+  <b>Description :</b> Tableaux
+author: JJ
+slides:
+  text: Doc
+  url: src/tableaux/index.html
+order: 2
+lang: fr-FR
+---
