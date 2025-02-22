@@ -8,10 +8,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: inseefrlab/onyxia-rstudio:latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+      
+      - name: Install R Dependencies
+        uses: r-lib/actions/setup-renv@v2
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
