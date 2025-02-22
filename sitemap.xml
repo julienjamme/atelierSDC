@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://julienjamme.github.io/atelierSDC/tableaux.html</loc>
-    <lastmod>2025-02-22T09:54:04.605Z</lastmod>
+    <loc>https://julienjamme.github.io/atelierSDC/cards/tableaux.html</loc>
+    <lastmod>2025-02-22T11:36:56.555Z</lastmod>
+  </url>
+  <url>
+    <loc>https://julienjamme.github.io/atelierSDC/cards/documentation.html</loc>
+    <lastmod>2025-02-22T11:37:04.266Z</lastmod>
+  </url>
+  <url>
+    <loc>https://julienjamme.github.io/atelierSDC/src/introduction/index.html</loc>
+    <lastmod>2025-02-22T11:24:47.901Z</lastmod>
+  </url>
+  <url>
+    <loc>https://julienjamme.github.io/atelierSDC/src/documentation/index.html</loc>
+    <lastmod>2025-02-22T11:08:35.928Z</lastmod>
+  </url>
+  <url>
+    <loc>https://julienjamme.github.io/atelierSDC/src/donnees_tabulees/index.html</loc>
+    <lastmod>2025-02-22T11:25:21.161Z</lastmod>
   </url>
   <url>
     <loc>https://julienjamme.github.io/atelierSDC/index.html</loc>
-    <lastmod>2025-02-22T09:56:18.902Z</lastmod>
+    <lastmod>2025-02-22T10:44:25.951Z</lastmod>
   </url>
   <url>
-    <loc>https://julienjamme.github.io/atelierSDC/introduction.html</loc>
-    <lastmod>2025-02-22T09:54:04.605Z</lastmod>
+    <loc>https://julienjamme.github.io/atelierSDC/cards/introduction.html</loc>
+    <lastmod>2025-02-22T11:36:19.822Z</lastmod>
   </url>
 </urlset>

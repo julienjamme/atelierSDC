@@ -1,0 +1,10 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/cards/introduction.html",
+      "/cards/tableaux.html",
+      "/cards/documentation.html"
+    ]
+  }
+]

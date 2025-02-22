@@ -1,44 +1,30 @@
 [
   {
-    "objectID": "tableaux.html",
-    "href": "tableaux.html",
+    "objectID": "src/introduction/index.html",
+    "href": "src/introduction/index.html",
     "title": "Atelier SDC",
     "section": "",
-    "text": "Title\nTables\n\n\n\n\nExample Table\n\n\n\nColumn 1\nColumn 2\n\n\n——–\n——–\n\n\nRow 1 Data\nRow 1 Data\n\n\nRow 2 Data\nRow 2 Data\n\n\n\nThis is a simple example of how to create tables in Quarto. You can expand this section with more complex tables or data visualizations as needed."
+    "text": "Accueil de la documentation\nUne liste des principales ressources bibliographiques et des outils à disposition."
+  },
+  {
+    "objectID": "src/documentation/index.html",
+    "href": "src/documentation/index.html",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "Accueil de la documentation\nok toto"
+  },
+  {
+    "objectID": "src/donnees_tabulees/index.html",
+    "href": "src/donnees_tabulees/index.html",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "Gestion des données tabulées\n\n\n\nTitle\nTables\n\n\n\n\nExample Table\n\n\n\nColumn 1\nColumn 2\n\n\n——–\n——–\n\n\nRow 1 Data\nRow 1 Data\n\n\nRow 2 Data\nRow 2 Data\n\n\n\nThis is a simple example of how to create tables in Quarto. You can expand this section with more complex tables or data visualizations as needed."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Atelier SDC",
     "section": "",
-    "text": "Ici un atelier d’introduction aux méthodes de gestion de la confidentialité."
-  },
-  {
-    "objectID": "introduction.html",
-    "href": "introduction.html",
-    "title": "Atelier SDC",
-    "section": "",
-    "text": "Welcome to the Atelier SDC project! This project is designed to showcase various aspects of our work, including data visualizations and insights.\n\n\n\nTo provide a comprehensive overview of our methodologies and findings.\nTo present data in an accessible and engaging format.\nTo facilitate collaboration and knowledge sharing among team members and stakeholders.\n\n\n\n\nTo navigate through the project, you can explore the different sections available in the website. Each section is designed to provide specific insights and information relevant to our objectives.\n\n\n\nWe would like to thank everyone who contributed to this project, including our team members and collaborators. Your efforts have made this project possible!"
-  },
-  {
-    "objectID": "introduction.html#objectives",
-    "href": "introduction.html#objectives",
-    "title": "Atelier SDC",
-    "section": "",
-    "text": "To provide a comprehensive overview of our methodologies and findings.\nTo present data in an accessible and engaging format.\nTo facilitate collaboration and knowledge sharing among team members and stakeholders."
-  },
-  {
-    "objectID": "introduction.html#getting-started",
-    "href": "introduction.html#getting-started",
-    "title": "Atelier SDC",
-    "section": "",
-    "text": "To navigate through the project, you can explore the different sections available in the website. Each section is designed to provide specific insights and information relevant to our objectives."
-  },
-  {
-    "objectID": "introduction.html#acknowledgments",
-    "href": "introduction.html#acknowledgments",
-    "title": "Atelier SDC",
-    "section": "",
-    "text": "We would like to thank everyone who contributed to this project, including our team members and collaborators. Your efforts have made this project possible!"
+    "text": "Atelier introductif\n\n\n\n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            Introduction\n            \n\n            \n              Description : Introduction\n\n            \n\n            \n            \n              \n                JJ \n                Feb 22, 2025\n              \n            \n            \n            \n              \n              \n                \n                  \n                    \n                      \n                        Doc\n                      \n                    \n                  \n                \n              \n              \n              \n            \n          \n        \n\n        \n\n      \n     \n  \n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            Tableaux\n            \n\n            \n              Description : Tableaux\n\n            \n\n            \n            \n              \n                JJ \n                Feb 22, 2025\n              \n            \n            \n            \n              \n              \n                \n                  \n                    \n                      \n                        Doc\n                      \n                    \n                  \n                \n              \n              \n              \n            \n          \n        \n\n        \n\n      \n     \n  \n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            Documentation\n            \n\n            \n              Description : Ici est rassemblée toute la documentation technique\n\n            \n\n            \n            \n              \n                JJ \n                Feb 22, 2025\n              \n            \n            \n            \n              \n              \n                \n                  \n                    \n                      \n                        Doc\n                      \n                    \n                  \n                \n              \n              \n              \n            \n          \n        \n\n        \n\n      \n     \n  \n\n\n\n\nNo matching items"
   }
 ]
