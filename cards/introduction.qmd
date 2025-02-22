@@ -1,6 +1,6 @@
 ---
 title: Introduction 
-image: img/donnees_tabulees_sdc.png
+image: img/introduction.png
 date: last-modified
 description: |
   <b>Description :</b> Introduction

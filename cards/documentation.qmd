@@ -1,6 +1,6 @@
 ---
 title: Documentation 
-image: img/donnees_tabulees_sdc.png
+image: img/documentation.png
 date: last-modified
 description: |
   <b>Description :</b> Ici est rassemblée toute la documentation technique
