@@ -18,7 +18,28 @@
     "href": "src/donnees_tabulees/index.html",
     "title": "Atelier SDC",
     "section": "",
-    "text": "Gestion des données tabulées\n\n\n\nTitle\nTables\n\n\n\n\nExample Table\n\n\n\nColumn 1\nColumn 2\n\n\n——–\n——–\n\n\nRow 1 Data\nRow 1 Data\n\n\nRow 2 Data\nRow 2 Data\n\n\n\nThis is a simple example of how to create tables in Quarto. You can expand this section with more complex tables or data visualizations as needed."
+    "text": "Installation de la dernière version\n\nremotes::install_github(\n  \"InseeFrLab/rtauargus\",\n  build_vignettes = FALSE,\n  upgrade = \"never\",\n  ref = \"v-1.2.0\"\n)\n\n\nlibrary(rtauargus)\nlibrary(dplyr)\n\n\n\n\n\n\n\nNote\n\n\n\nInspiration pour ces slides :\n\nDocumentation collaborative utilitR ;\nManuel rtauargus ;\nManuel Tau-Argus ;\nChapitre 5 du Handbook on Statistical Disclosure Control\n\n\n\n\n\n\nPréciser la localisation du logiciel Tau-Argus\n\nloc_tauargus &lt;- \"Y:/Logiciels/TauArgus/TauArgus4.2.2b1/TauArgus.exe\"\noptions(rtauargus.tauargus_exe = loc_tauargus)\n\n\n\n\n\ndata(\"turnover_act_size\")\nstr(turnover_act_size)\n\ntibble [414 × 5] (S3: tbl_df/tbl/data.frame)\n $ ACTIVITY: chr [1:414] \"AZ\" \"BE\" \"FZ\" \"GI\" ...\n $ SIZE    : chr [1:414] \"Total\" \"Total\" \"Total\" \"Total\" ...\n $ N_OBS   : int [1:414] 405 12878 28043 62053 8135 8140 11961 41359 26686 25108 ...\n $ TOT     : num [1:414] 44475 24827613 8907311 26962063 8584917 ...\n $ MAX     : num [1:414] 6212 1442029 1065833 3084242 3957364 ..."
+  },
+  {
+    "objectID": "src/donnees_tabulees/index.html#les-packages",
+    "href": "src/donnees_tabulees/index.html#les-packages",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "Installation de la dernière version\n\nremotes::install_github(\n  \"InseeFrLab/rtauargus\",\n  build_vignettes = FALSE,\n  upgrade = \"never\",\n  ref = \"v-1.2.0\"\n)\n\n\nlibrary(rtauargus)\nlibrary(dplyr)\n\n\n\n\n\n\n\nNote\n\n\n\nInspiration pour ces slides :\n\nDocumentation collaborative utilitR ;\nManuel rtauargus ;\nManuel Tau-Argus ;\nChapitre 5 du Handbook on Statistical Disclosure Control"
+  },
+  {
+    "objectID": "src/donnees_tabulees/index.html#rtauargus",
+    "href": "src/donnees_tabulees/index.html#rtauargus",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "Préciser la localisation du logiciel Tau-Argus\n\nloc_tauargus &lt;- \"Y:/Logiciels/TauArgus/TauArgus4.2.2b1/TauArgus.exe\"\noptions(rtauargus.tauargus_exe = loc_tauargus)"
+  },
+  {
+    "objectID": "src/donnees_tabulees/index.html#rtauargus-1",
+    "href": "src/donnees_tabulees/index.html#rtauargus-1",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "data(\"turnover_act_size\")\nstr(turnover_act_size)\n\ntibble [414 × 5] (S3: tbl_df/tbl/data.frame)\n $ ACTIVITY: chr [1:414] \"AZ\" \"BE\" \"FZ\" \"GI\" ...\n $ SIZE    : chr [1:414] \"Total\" \"Total\" \"Total\" \"Total\" ...\n $ N_OBS   : int [1:414] 405 12878 28043 62053 8135 8140 11961 41359 26686 25108 ...\n $ TOT     : num [1:414] 44475 24827613 8907311 26962063 8584917 ...\n $ MAX     : num [1:414] 6212 1442029 1065833 3084242 3957364 ..."
   },
   {
     "objectID": "index.html",

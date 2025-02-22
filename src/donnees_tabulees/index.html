@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -74,7 +108,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Atelier SDC">
-<meta property="og:description" content="">
 <meta property="og:site_name" content="Atelier SDC">
 </head>
 
@@ -123,7 +156,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#gestion-des-données-tabulées" id="toc-gestion-des-données-tabulées" class="nav-link active" data-scroll-target="#gestion-des-données-tabulées">Gestion des données tabulées</a></li>
+  <li><a href="#gestion-des-données-tabulées" id="toc-gestion-des-données-tabulées" class="nav-link active" data-scroll-target="#gestion-des-données-tabulées">Gestion des données tabulées</a>
+  <ul class="collapse">
+  <li><a href="#les-packages" id="toc-les-packages" class="nav-link" data-scroll-target="#les-packages">Les packages</a></li>
+  <li><a href="#rtauargus" id="toc-rtauargus" class="nav-link" data-scroll-target="#rtauargus"><code>rtauargus</code></a></li>
+  <li><a href="#rtauargus-1" id="toc-rtauargus-1" class="nav-link" data-scroll-target="#rtauargus-1"><code>rtauargus</code></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -151,39 +189,66 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="gestion-des-données-tabulées" class="level1">
 <h1>Gestion des données tabulées</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Title</th>
-<th>Tables</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Example Table</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Column 1</td>
-<td>Column 2</td>
-</tr>
-<tr class="odd">
-<td>——–</td>
-<td>——–</td>
-</tr>
-<tr class="even">
-<td>Row 1 Data</td>
-<td>Row 1 Data</td>
-</tr>
-<tr class="odd">
-<td>Row 2 Data</td>
-<td>Row 2 Data</td>
-</tr>
-</tbody>
-</table>
-<p>This is a simple example of how to create tables in Quarto. You can expand this section with more complex tables or data visualizations as needed.</p>
+<section id="les-packages" class="level2">
+<h2 class="anchored" data-anchor-id="les-packages">Les packages</h2>
+<p><strong>Installation de la dernière version</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(</span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="st">"InseeFrLab/rtauargus"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="at">build_vignettes =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="at">upgrade =</span> <span class="st">"never"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="at">ref =</span> <span class="st">"v-1.2.0"</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rtauargus)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Inspiration pour ces slides :</p>
+<ul>
+<li>Documentation collaborative <a href="https://www.book.utilitr.org/"><code>utilitR</code></a> ;</li>
+<li>Manuel <a href="https://inseefrlab.github.io/rtauargus/"><code>rtauargus</code></a> ;</li>
+<li>Manuel <a href="https://research.cbs.nl/casc/Software/TauManualV4.1.pdf"><code>Tau-Argus</code></a> ;</li>
+<li>Chapitre 5 du <a href="https://sdctools.github.io/HandbookSDC/"><code>Handbook on Statistical Disclosure Control</code></a></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="rtauargus" class="level2">
+<h2 class="anchored" data-anchor-id="rtauargus"><code>rtauargus</code></h2>
+<p><strong>Préciser la localisation du logiciel Tau-Argus</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>loc_tauargus <span class="ot">&lt;-</span> <span class="st">"Y:/Logiciels/TauArgus/TauArgus4.2.2b1/TauArgus.exe"</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">options</span>(<span class="at">rtauargus.tauargus_exe =</span> loc_tauargus)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="rtauargus-1" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="rtauargus-1"><code>rtauargus</code></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">data</span>(<span class="st">"turnover_act_size"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">str</span>(turnover_act_size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [414 × 5] (S3: tbl_df/tbl/data.frame)
+ $ ACTIVITY: chr [1:414] "AZ" "BE" "FZ" "GI" ...
+ $ SIZE    : chr [1:414] "Total" "Total" "Total" "Total" ...
+ $ N_OBS   : int [1:414] 405 12878 28043 62053 8135 8140 11961 41359 26686 25108 ...
+ $ TOT     : num [1:414] 44475 24827613 8907311 26962063 8584917 ...
+ $ MAX     : num [1:414] 6212 1442029 1065833 3084242 3957364 ...</code></pre>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
