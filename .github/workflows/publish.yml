@@ -20,9 +20,8 @@ jobs:
         run: |
           install.packages('quarto')
 
-      - name: Render Quarto project
-        run: |
-          quarto render
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
