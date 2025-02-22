@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+    workflow_dispatch:
 
 jobs:
   build:
@@ -16,11 +17,9 @@ jobs:
       
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
-
-      - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Publish to GitHub Pages (and render)
+      - name: Render and Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages

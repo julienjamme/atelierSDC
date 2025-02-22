@@ -8,12 +8,59 @@ format:
 # Gestion des données tabulées
 
 
-| Title | Tables |
-|-------|--------|
-| Example Table |  |
-| Column 1 | Column 2 |
-| -------- | -------- |
-| Row 1 Data | Row 1 Data |
-| Row 2 Data | Row 2 Data |
+## Les packages
 
-This is a simple example of how to create tables in Quarto. You can expand this section with more complex tables or data visualizations as needed.
+__Installation de la dernière version__
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "1"
+remotes::install_github(
+  "InseeFrLab/rtauargus",
+  build_vignettes = FALSE,
+  upgrade = "never",
+  ref = "v-1.2.0"
+)
+```
+
+
+```{r}
+#| output: false
+#| echo: true
+library(rtauargus)
+library(dplyr)
+```
+
+::: {.callout-note}
+Inspiration pour ces slides :
+
+- Documentation collaborative [`utilitR`](https://www.book.utilitr.org/) ;
+- Manuel [`rtauargus`](https://inseefrlab.github.io/rtauargus/) ;
+- Manuel [`Tau-Argus`](https://research.cbs.nl/casc/Software/TauManualV4.1.pdf) ;
+- Chapitre 5 du [`Handbook on Statistical Disclosure Control`](https://sdctools.github.io/HandbookSDC/) 
+:::
+
+
+
+
+## `rtauargus`
+
+__Préciser la localisation du logiciel Tau-Argus__
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2"
+loc_tauargus <- "Y:/Logiciels/TauArgus/TauArgus4.2.2b1/TauArgus.exe"
+options(rtauargus.tauargus_exe = loc_tauargus)
+```
+
+
+## `rtauargus` {.smaller}
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2"
+data("turnover_act_size")
+str(turnover_act_size)
+```
