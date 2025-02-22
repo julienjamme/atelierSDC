@@ -2,4 +2,4 @@
 title: "Atelier SDC"
 ---
 
-[link](www.lequipe.fr)
+Ici un atelier d'introduction aux méthodes de gestion de la confidentialité.
