@@ -1,0 +1,9 @@
+| Title | Tables |
+|-------|--------|
+| Example Table |  |
+| Column 1 | Column 2 |
+| -------- | -------- |
+| Row 1 Data | Row 1 Data |
+| Row 2 Data | Row 2 Data |
+
+This is a simple example of how to create tables in Quarto. You can expand this section with more complex tables or data visualizations as needed.

@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: "_site"
+
+title: "Atelier SDC"
+format: 
+  html: 
+    toc: true
+    toc-location: left
+    number-sections: true
+    theme: cosmo
+website:
+  navbar:
+    right:
+      - text: "Introduction"
+        href: "introduction.html"
+      - text: "Tableaux"
+        href: "tableaux.html"
