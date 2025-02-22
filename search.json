@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "tableaux.html",
+    "href": "tableaux.html",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "Title\nTables\n\n\n\n\nExample Table\n\n\n\nColumn 1\nColumn 2\n\n\n——–\n——–\n\n\nRow 1 Data\nRow 1 Data\n\n\nRow 2 Data\nRow 2 Data\n\n\n\nThis is a simple example of how to create tables in Quarto. You can expand this section with more complex tables or data visualizations as needed."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "link"
+  },
+  {
+    "objectID": "introduction.html",
+    "href": "introduction.html",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "Welcome to the Atelier SDC project! This project is designed to showcase various aspects of our work, including data visualizations and insights.\n\n\n\nTo provide a comprehensive overview of our methodologies and findings.\nTo present data in an accessible and engaging format.\nTo facilitate collaboration and knowledge sharing among team members and stakeholders.\n\n\n\n\nTo navigate through the project, you can explore the different sections available in the website. Each section is designed to provide specific insights and information relevant to our objectives.\n\n\n\nWe would like to thank everyone who contributed to this project, including our team members and collaborators. Your efforts have made this project possible!"
+  },
+  {
+    "objectID": "introduction.html#objectives",
+    "href": "introduction.html#objectives",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "To provide a comprehensive overview of our methodologies and findings.\nTo present data in an accessible and engaging format.\nTo facilitate collaboration and knowledge sharing among team members and stakeholders."
+  },
+  {
+    "objectID": "introduction.html#getting-started",
+    "href": "introduction.html#getting-started",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "To navigate through the project, you can explore the different sections available in the website. Each section is designed to provide specific insights and information relevant to our objectives."
+  },
+  {
+    "objectID": "introduction.html#acknowledgments",
+    "href": "introduction.html#acknowledgments",
+    "title": "Atelier SDC",
+    "section": "",
+    "text": "We would like to thank everyone who contributed to this project, including our team members and collaborators. Your efforts have made this project possible!"
+  }
+]
